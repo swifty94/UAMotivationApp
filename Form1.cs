@@ -11,15 +11,7 @@ namespace UAMotivationApp
 {
     public partial class Form1 : Form
     {
-        private static readonly ILog _log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);        
-        private void Form1_Load(object sender, EventArgs e)
-
-        {
-            this.TopMost = true;
-            this.FormBorderStyle = FormBorderStyle.None;
-            this.WindowState = FormWindowState.Maximized;
-            _log.Info("Load");
-        }
+        private static readonly ILog _log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);     
         public Form1()
         {
             var logRepository = LogManager.GetRepository(Assembly.GetEntryAssembly());
