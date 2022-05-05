@@ -18,12 +18,14 @@ namespace UAMotivationApp
             this.TopMost = true;
             this.FormBorderStyle = FormBorderStyle.None;
             this.WindowState = FormWindowState.Maximized;
+            _log.Info("Load");
         }
         public Form1()
         {
             var logRepository = LogManager.GetRepository(Assembly.GetEntryAssembly());
             XmlConfigurator.Configure(logRepository, new System.IO.FileInfo("log4net.config"));
             InitializeComponent();
+            _log.Info("Init");
         }
 
         private string path = AppDomain.CurrentDomain.BaseDirectory + "media";
@@ -31,12 +33,20 @@ namespace UAMotivationApp
 
         private string RandomImage(string category)
         {
-            List<string> pathToCategory = Directory.GetFiles(path + "\\" + category).ToList();
-            Random rnd = new Random();
-            int index = rnd.Next(pathToCategory.Count);            
-            string image = pathToCategory[index];            
-            _log.Info($"RandomImage() => {image}");
-            return image;
+            try
+            {
+                List<string> pathToCategory = Directory.GetFiles(path + "\\" + category).ToList();
+                Random rnd = new Random();
+                int index = rnd.Next(pathToCategory.Count);
+                string image = pathToCategory[index];
+                _log.Info(image);
+                return image;
+            }
+            catch (Exception err)
+            {
+                _log.Error(err.ToString());
+                return null;
+            }            
         }
 
         private void UpdatePictureBox(string imagePath)
@@ -45,22 +55,23 @@ namespace UAMotivationApp
             {
                 pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                 pictureBox1.ImageLocation = imagePath;
+                _log.Info("DONE");
             } catch (Exception err)
             {
-                _log.Error($"Exception {err.ToString()}");
+                _log.Error(err.ToString());
             }            
         }
         private void btnChernobaivka_Click(object sender, EventArgs e)
         {
             try
             {
-                _log.Info(e.ToString() + sender.ToString());               
+                _log.Info("onClick");               
                 string imagePath = RandomImage("chernobaivka");
                 UpdatePictureBox(imagePath);
 
             }catch (Exception err)
             {
-                _log.Error($"Exception {err.ToString()}");
+                _log.Error(err.ToString());
             }
             
         }
@@ -69,13 +80,13 @@ namespace UAMotivationApp
         {
             try
             {
-                _log.Info(e.ToString() + sender.ToString());
+                _log.Info("onClick");
                 string imagePath = RandomImage("don");
                 UpdatePictureBox(imagePath);
             }
             catch (Exception err)
             {
-                _log.Error($"Exception {err.ToString()}");
+                _log.Error(err.ToString());
             }
         }
 
@@ -83,13 +94,13 @@ namespace UAMotivationApp
         {
             try
             {
-                _log.Info(e.ToString() + sender.ToString());
+                _log.Info("onClick");
                 string imagePath = RandomImage("general");
                 UpdatePictureBox(imagePath);
             }
             catch (Exception err)
             {
-                _log.Error($"Exception {err.ToString()}");
+                _log.Error(err.ToString());
             }
         }
 
@@ -97,13 +108,13 @@ namespace UAMotivationApp
         {
             try
             {
-                _log.Info(e.ToString() + sender.ToString());
+                _log.Info("onClick");
                 string imagePath = RandomImage("mertvetchuk");
                 UpdatePictureBox(imagePath);
             }
             catch (Exception err)
             {
-                _log.Error($"Exception {err.ToString()}");
+                _log.Error(err.ToString());
             }
         }
 
@@ -111,13 +122,13 @@ namespace UAMotivationApp
         {
             try
             {
-                _log.Info(e.ToString() + sender.ToString());
+                _log.Info("onClick");
                 string imagePath = RandomImage("bulbo");
                 UpdatePictureBox(imagePath);
             }
             catch (Exception err)
             {
-                _log.Error($"Exception {err.ToString()}");
+                _log.Error(err.ToString());
             }
         }
 
@@ -125,13 +136,13 @@ namespace UAMotivationApp
         {
             try
             {
-                _log.Info(e.ToString() + sender.ToString());
+                _log.Info("onClick");
                 string imagePath = RandomImage("huylo");
                 UpdatePictureBox(imagePath);
             }
             catch (Exception err)
             {
-                _log.Error($"Exception {err.ToString()}");
+                _log.Error(err.ToString());
             }
         }
 
@@ -139,13 +150,13 @@ namespace UAMotivationApp
         {
             try
             {
-                _log.Info(e.ToString() + sender.ToString());
+                _log.Info("onClick");
                 string imagePath = RandomImage("arestovich");
                 UpdatePictureBox(imagePath);
             }
             catch (Exception err)
             {
-                _log.Error($"Exception {err.ToString()}");
+                _log.Error(err.ToString());
             }
         }        
 
@@ -153,14 +164,13 @@ namespace UAMotivationApp
         {
             try
             {
-                _log.Info(e.ToString() + sender.ToString());
+                _log.Info("onClick");
                 string imagePath = RandomImage("ruswarship");
                 UpdatePictureBox(imagePath);
             }
             catch (Exception err)
             {
-                _log.Info(e.ToString() + sender.ToString());
-                _log.Error($"Exception {err.ToString()}");
+                _log.Error(err.ToString());
             }
         }
     }
