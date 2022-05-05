@@ -5,7 +5,7 @@ WinForms application made by the impression of Ukraine vs ruzzia war. Humor can 
 
 Installation:
 ---
-- Download this repo to your PC 
+- Download this repo to your PC
 
 Usage Example:
 ---    
@@ -14,3 +14,7 @@ Usage Example:
 C:\Users\admin>cd C:\Users\admin\Documents\Dev\UAMotivationApp\release 
 
 - Double click on UAMotivationApp.exe.
+
+Overview:
+---
+![](https://raw.githubusercontent.com/swifty94/UAMotivationApp/master/example/example.mp4)
