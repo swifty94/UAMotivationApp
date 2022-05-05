@@ -28,8 +28,7 @@ namespace UAMotivationApp
             _log.Info("Init");
         }
 
-        private string path = AppDomain.CurrentDomain.BaseDirectory + "media";
-        private const string LogPath = "UAMotivationAppLog.txt";
+        private protected string path = AppDomain.CurrentDomain.BaseDirectory + "media";
 
         private string RandomImage(string category)
         {
