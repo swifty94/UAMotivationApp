@@ -17,4 +17,4 @@ C:\Users\admin>cd C:\Users\admin\Documents\Dev\UAMotivationApp\release
 
 Overview:
 ---
-![](https://raw.githubusercontent.com/swifty94/UAMotivationApp/master/example/example.webm)
+![](https://raw.githubusercontent.com/swifty94/UAMotivationApp/master/example/example.gif)
