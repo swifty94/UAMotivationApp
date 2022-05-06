@@ -47,7 +47,7 @@ namespace UAMotivationApp
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(40, 10);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1080, 531);
             this.pictureBox1.TabIndex = 0;
@@ -56,79 +56,86 @@ namespace UAMotivationApp
             // btnChernobaivka
             // 
             this.btnChernobaivka.Location = new System.Drawing.Point(291, 24);
-            this.btnChernobaivka.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnChernobaivka.Margin = new System.Windows.Forms.Padding(2);
             this.btnChernobaivka.Name = "btnChernobaivka";
             this.btnChernobaivka.Size = new System.Drawing.Size(92, 46);
             this.btnChernobaivka.TabIndex = 1;
+            this.btnChernobaivka.Tag = "btnChernobaivka";
             this.btnChernobaivka.Text = "Чорнобаївка";
             this.btnChernobaivka.UseVisualStyleBackColor = true;
-            this.btnChernobaivka.Click += new System.EventHandler(this.btnChernobaivka_Click);
+            this.btnChernobaivka.Click += new System.EventHandler(this.BtnClick);
             // 
             // btnHuylo
             // 
             this.btnHuylo.Location = new System.Drawing.Point(157, 24);
-            this.btnHuylo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnHuylo.Margin = new System.Windows.Forms.Padding(2);
             this.btnHuylo.Name = "btnHuylo";
             this.btnHuylo.Size = new System.Drawing.Size(95, 46);
             this.btnHuylo.TabIndex = 2;
+            this.btnHuylo.Tag = "btnHuylo";
             this.btnHuylo.Text = "Хуйло";
             this.btnHuylo.UseVisualStyleBackColor = true;
-            this.btnHuylo.Click += new System.EventHandler(this.btnHuylo_Click);
+            this.btnHuylo.Click += new System.EventHandler(this.BtnClick);
             // 
             // btnArestovich
             // 
             this.btnArestovich.Location = new System.Drawing.Point(28, 24);
-            this.btnArestovich.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnArestovich.Margin = new System.Windows.Forms.Padding(2);
             this.btnArestovich.Name = "btnArestovich";
             this.btnArestovich.Size = new System.Drawing.Size(101, 46);
             this.btnArestovich.TabIndex = 3;
+            this.btnArestovich.Tag = "btnArestovich";
             this.btnArestovich.Text = "Арестовіч";
             this.btnArestovich.UseVisualStyleBackColor = true;
-            this.btnArestovich.Click += new System.EventHandler(this.btnArestovich_Click);
+            this.btnArestovich.Click += new System.EventHandler(this.BtnClick);
             // 
             // btnDon
             // 
             this.btnDon.Location = new System.Drawing.Point(791, 24);
-            this.btnDon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDon.Margin = new System.Windows.Forms.Padding(2);
             this.btnDon.Name = "btnDon";
             this.btnDon.Size = new System.Drawing.Size(100, 46);
             this.btnDon.TabIndex = 4;
+            this.btnDon.Tag = "btnDon";
             this.btnDon.Text = "Тік-токдиров";
             this.btnDon.UseVisualStyleBackColor = true;
-            this.btnDon.Click += new System.EventHandler(this.btnDon_Click);
+            this.btnDon.Click += new System.EventHandler(this.BtnClick);
             // 
             // btnBulbo
             // 
             this.btnBulbo.Location = new System.Drawing.Point(420, 24);
-            this.btnBulbo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBulbo.Margin = new System.Windows.Forms.Padding(2);
             this.btnBulbo.Name = "btnBulbo";
             this.btnBulbo.Size = new System.Drawing.Size(86, 46);
             this.btnBulbo.TabIndex = 5;
+            this.btnBulbo.Tag = "btnBulbo";
             this.btnBulbo.Text = "Бульбофюрер";
             this.btnBulbo.UseVisualStyleBackColor = true;
-            this.btnBulbo.Click += new System.EventHandler(this.btnBulbo_Click);
+            this.btnBulbo.Click += new System.EventHandler(this.BtnClick);
             // 
             // btnMertvetchuk
             // 
             this.btnMertvetchuk.Location = new System.Drawing.Point(535, 24);
-            this.btnMertvetchuk.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMertvetchuk.Margin = new System.Windows.Forms.Padding(2);
             this.btnMertvetchuk.Name = "btnMertvetchuk";
             this.btnMertvetchuk.Size = new System.Drawing.Size(97, 46);
             this.btnMertvetchuk.TabIndex = 6;
+            this.btnMertvetchuk.Tag = "btnMertvetchuk";
             this.btnMertvetchuk.Text = "Мертветчук";
             this.btnMertvetchuk.UseVisualStyleBackColor = true;
-            this.btnMertvetchuk.Click += new System.EventHandler(this.btnMertvetchuk_Click);
+            this.btnMertvetchuk.Click += new System.EventHandler(this.BtnClick);
             // 
             // btnGeneral
             // 
             this.btnGeneral.Location = new System.Drawing.Point(668, 24);
-            this.btnGeneral.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGeneral.Margin = new System.Windows.Forms.Padding(2);
             this.btnGeneral.Name = "btnGeneral";
             this.btnGeneral.Size = new System.Drawing.Size(92, 46);
             this.btnGeneral.TabIndex = 7;
+            this.btnGeneral.Tag = "btnGeneral";
             this.btnGeneral.Text = "Усіляке різне";
             this.btnGeneral.UseVisualStyleBackColor = true;
-            this.btnGeneral.Click += new System.EventHandler(this.btnGeneral_Click);
+            this.btnGeneral.Click += new System.EventHandler(this.BtnClick);
             // 
             // panel1
             // 
@@ -141,7 +148,7 @@ namespace UAMotivationApp
             this.panel1.Controls.Add(this.btnChernobaivka);
             this.panel1.Controls.Add(this.btnMertvetchuk);
             this.panel1.Location = new System.Drawing.Point(40, 545);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1080, 84);
             this.panel1.TabIndex = 8;
@@ -153,9 +160,10 @@ namespace UAMotivationApp
             this.btnWarship.Name = "btnWarship";
             this.btnWarship.Size = new System.Drawing.Size(118, 46);
             this.btnWarship.TabIndex = 9;
+            this.btnWarship.Tag = "btnWarship";
             this.btnWarship.Text = "Рускій ваєний карабль";
             this.btnWarship.UseVisualStyleBackColor = true;
-            this.btnWarship.Click += new System.EventHandler(this.btnWarship_Click_1);
+            this.btnWarship.Click += new System.EventHandler(this.BtnClick);
             // 
             // Form1
             // 
@@ -165,7 +173,7 @@ namespace UAMotivationApp
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "UA Motivation";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
